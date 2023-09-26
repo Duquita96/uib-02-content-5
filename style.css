@@ -1,0 +1,29 @@
+/* id tienen 1ra prioridad */
+#greeting {
+    color: red;
+}
+/* the valor of a (.) has a value of a 10points, when you have 2 class, example, p {} and .something {} and the both are the same, .p has priority*/
+.highlighted {
+    color: gold;
+}
+/* p solo tiene un valor de 1 point */
+p {
+    color: blue;
+}
+
+p#greeting {
+    color: teal;
+}
+
+p.highlighted {
+    color: magenta;
+}
+
+.highlighted.emphasis {
+    color: green;
+}
+
+section p #greeting .emphasis {
+    color: darkgoldenrod;
+
+}

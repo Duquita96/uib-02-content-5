@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+</head>
+
+<body>
+    <section>
+        <p>Regular!</p>
+        <!-- blue -->
+        <p style="color: lime">Inline!</p>
+        <!-- lime -->
+        <p class="highlighted">Highlighted!</p>
+        <!-- magenta (wins line17 becouse ist more especific, in this case we have 3 options, and the one that its more especific its the line 17)-->
+        <p class="highlighted" id="greeting">Highlighted greeting!</p>
+        <!-- teal -->
+        <p class="highlighted" style="color: lime;">Inline highlighted</p>
+        <!-- lime -->
+        <p class="highlighted emphasis">Highlighted, emphasis</p>
+        <!-- green -->
+        <div class="highlighted">
+            <!-- gold -->
+            <div>Nested</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
